@@ -39,7 +39,10 @@
   <!-- onclick="bodyPlayMusic()" -->
 
   <body>
-
+	<!-- 右下角MD按钮，弹窗调用在底部-->
+	<button class="mdui-fab mdui-fab-fixed mdui-ripple "mdui-dialog="{target: '#Dialog'} ">
+	  <i class="mdui-icon material-icons">account_box</i>
+	</button>
     <audio id="audioDom" src="https://download.kstore.space/download/2719/newyear/files/audio.mp3" preload="auto" loop="loop"></audio>
 
     <div id="yhBtn" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:999;display:flex;flex-direction:column;justify-content:center;align-items:center;color:#fff ; font-size:20px    ">
@@ -84,7 +87,7 @@
 	  </div>
 	  <div class="stage-container remove">
 		<div class="page_two hide">
-		  <div id="text" style="display:none;"  class="mdui-typo"><h6>倒计时还有</h6><p><h5 class="mdui-text-color-red" id="time"></h5><p id="text1"></p><p>坚持自己善待一生的信念，增强人格魅力<br>保持长远胸怀，心怀理想，热爱生活。<br>新的一年，所有的不开心和恨意都应该消散，一起迎接新的一年吧。<br><br>Ps:点击屏幕任意地方即可放烟花<br><p><a href="https://kgithub.com/ChanYiCYJ/2022-New-year">本项目已开源至Github</a></p><br><br><span id="copyright"></span></p></div>
+		  <div id="text" style="display:none;"  class="mdui-typo"><h6>倒计时还有</h6><p><h5 class="mdui-text-color-red" id="time"></h5><p id="text1"></p><p>坚持自己善待一生的信念，增强人格魅力<br>保持长远胸怀，心怀理想，热爱生活。<br>新的一年，所有的不开心和恨意都应该消散，一起迎接新的一年吧。<br><br>Ps:点击屏幕任意地方即可放烟花<br><p><br><span id="copyright"></span></p></div>
 		  <div class="type_words" id="contents" style="font-size:1.15rem;line-height:1.5rem;"></div>
 		</div>
 		<div class="canvas-container">
@@ -151,7 +154,10 @@
 		</div>
 	  </div>
     </div>
-
+	<div class="mdui-dialog" id="Dialog">
+	  <div class="mdui-dialog-title">2022-New-year</div>
+	  <div class="mdui-dialog-content mdui-typo">此项目本应取为2023-New-year，只不过在2023前夕完成才取名为2022<br>本项目使用了corestudi0未开源的项目。这属于非法行为，但不为盈利而生<br>其中使用了MDUI的前端库，MDUI 漂亮、轻量且好用，它能让你更轻松地开发 Material Design 网页应用<br><a href="https://github.com/ChanYiCYJ/2022-New-year">本项目已开源至Github</a></p></div>
+	</div>
 
 
     <!-- partial -->
@@ -215,7 +221,7 @@
                 }
             }, 100)
         }
-</script><!--!‬‏‬‫‭‫‫‬‫‭‫‬‬‏‭‭‪‏‬‎‫‬‎‎-->
+		</script><!--!‬‏‬‫‭‫‫‬‫‭‫‬‬‏‭‭‪‏‬‎‫‬‎‎-->
 
 <script>
         var _hmt = _hmt || [];
@@ -266,6 +272,7 @@
 time()
 </script>
 	倒计时
+	<!-- MDUI" -->
 	<script
       src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
       integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
